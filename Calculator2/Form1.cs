@@ -20,7 +20,11 @@ namespace Calculator2
         private void button1_Click(object sender, EventArgs e)
         {
             int a, b, kq;
+<<<<<<< HEAD
             if (txtSoA.Text != String.Empty)
+=======
+            if (txtSoA.Text != String.Empty && txtSoB.Text != String.Empty)
+>>>>>>> feature-cal
             {
                 a = int.Parse(txtSoA.Text);
                 b = int.Parse(txtSoB.Text);
