@@ -20,10 +20,13 @@ namespace Calculator2
         private void button1_Click(object sender, EventArgs e)
         {
             int a, b, kq;
-            a = int.Parse(txtSoA.Text);
-            b = int.Parse(txtSoB.Text);
-            kq = a + b;
-            txtKQ.Text = kq.ToString();
+            if (txtSoA.Text != String.Empty)
+            {
+                a = int.Parse(txtSoA.Text);
+                b = int.Parse(txtSoB.Text);
+                kq = a + b;
+                txtKQ.Text = kq.ToString(); 
+            }
         }
     }
 }
