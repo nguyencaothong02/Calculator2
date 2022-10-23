@@ -17,27 +17,32 @@ namespace Calculator2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int a, b, kq;
-
-            if (txtSoA.Text != String.Empty || txtSoB.Text != String.Empty)
-
-            {
-                a = int.Parse(txtSoA.Text);
-                b = int.Parse(txtSoB.Text);
-                kq = a + b;
-                txtKQ.Text = kq.ToString(); 
-            }
-        }
+        
 
         private void btnTru_Click(object sender, EventArgs e)
         {
             int a, b, kq;
             a = int.Parse(txtSoA.Text);
             b = int.Parse(txtSoB.Text);
-            kq = a = b;
+            kq = a - b;
             txtKQ.Text = kq.ToString();
+        }
+
+        private void btnCong_Click(object sender, EventArgs e)
+        {
+            int a, b, kq;
+            a = int.Parse(txtSoA.Text);
+            b = int.Parse(txtSoB.Text);
+            Calculation cal = new Calculation(a, b);
+            txtKQ.Text = cal.Execute("+").ToString();
+
+            //if (txtSoA.Text != String.Empty && txtSoB.Text != String.Empty)
+            //{
+            //    a = int.Parse(txtSoA.Text);
+            //    b = int.Parse(txtSoB.Text);
+            //    kq = a + b;
+            //    txtKQ.Text = kq.ToString();
+            //}
         }
     }
 }

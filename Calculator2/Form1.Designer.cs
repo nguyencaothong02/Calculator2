@@ -33,7 +33,7 @@
             this.txtSoA = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSoB = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCong = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKQ = new System.Windows.Forms.TextBox();
             this.btnTru = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(269, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 26);
+            this.label1.Size = new System.Drawing.Size(93, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tính Toán";
             // 
@@ -54,7 +54,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(88, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 26);
+            this.label2.Size = new System.Drawing.Size(54, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số A ";
             // 
@@ -62,7 +62,7 @@
             // 
             this.txtSoA.Location = new System.Drawing.Point(199, 100);
             this.txtSoA.Name = "txtSoA";
-            this.txtSoA.Size = new System.Drawing.Size(258, 32);
+            this.txtSoA.Size = new System.Drawing.Size(258, 27);
             this.txtSoA.TabIndex = 2;
             // 
             // label3
@@ -70,7 +70,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(88, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 26);
+            this.label3.Size = new System.Drawing.Size(49, 22);
             this.label3.TabIndex = 1;
             this.label3.Text = "Số B";
             // 
@@ -78,25 +78,25 @@
             // 
             this.txtSoB.Location = new System.Drawing.Point(199, 154);
             this.txtSoB.Name = "txtSoB";
-            this.txtSoB.Size = new System.Drawing.Size(258, 32);
+            this.txtSoB.Size = new System.Drawing.Size(258, 27);
             this.txtSoB.TabIndex = 2;
             // 
-            // button1
+            // btnCong
             // 
-            this.button1.Location = new System.Drawing.Point(199, 279);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 46);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCong.Location = new System.Drawing.Point(199, 279);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(79, 46);
+            this.btnCong.TabIndex = 3;
+            this.btnCong.Text = "+";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(88, 231);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 26);
+            this.label4.Size = new System.Drawing.Size(76, 22);
             this.label4.TabIndex = 1;
             this.label4.Text = "Kết Quả";
             // 
@@ -104,7 +104,7 @@
             // 
             this.txtKQ.Location = new System.Drawing.Point(199, 225);
             this.txtKQ.Name = "txtKQ";
-            this.txtKQ.Size = new System.Drawing.Size(258, 32);
+            this.txtKQ.Size = new System.Drawing.Size(258, 27);
             this.txtKQ.TabIndex = 2;
             // 
             // btnTru
@@ -119,11 +119,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 484);
             this.Controls.Add(this.btnTru);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCong);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSoB);
@@ -147,7 +147,7 @@
         private System.Windows.Forms.TextBox txtSoA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSoB;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKQ;
         private System.Windows.Forms.Button btnTru;
