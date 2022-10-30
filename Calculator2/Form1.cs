@@ -17,7 +17,7 @@ namespace Calculator2
             InitializeComponent();
         }
 
-        
+
 
         private void btnTru_Click(object sender, EventArgs e)
         {
@@ -44,5 +44,6 @@ namespace Calculator2
             //    txtKQ.Text = kq.ToString();
             //}
         }
+        
     }
 }
