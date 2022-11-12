@@ -8,12 +8,13 @@ namespace CalculatorTester
     public class UnitTest1
     {
         Calculation cal;
+        
         public TestContext TestContext { get; set; }
         [TestInitialize]
         public void SetUp()
         {
             cal = new Calculation(10, 5);
-            cal = new Calculation(3, 2);
+            
         }
 
         [TestMethod]
@@ -59,7 +60,7 @@ namespace CalculatorTester
             operation = TestContext.DataRow[2].ToString();
             operation = operation.Remove(0, 1);
             expected = int.Parse(TestContext.DataRow[3].ToString());
-            c = new Calculation(a, b);     
+            c = new Calculation(a, b);
             Assert.AreEqual(expected, c.Execute(operation));
         }
 
@@ -77,30 +78,22 @@ namespace CalculatorTester
 
         }
         [TestMethod]
-        public void CompareTest2()
+        public void PowerTest()
         {
             Calculation c;
-            int a, b, expected, actural;
-            a = 3;
-            b = 2;
+            double a;
+            int b;
+            int expected;
+            double actural;
+            a = 2;
+            b = 0;
+            
             c = new Calculation(a, b);
             expected = 1;
-            actural = c.SoSanh(a, b);
-            Assert.AreEqual(2, actural);
+            actural = c.Power(a, b);
+            Assert.AreEqual(1, actural);
 
         }
-        [TestMethod]
-        public void CompareTest3()
-        {
-            Calculation c;
-            int a, b, expected, actural;
-            a = 3;
-            b = 2;
-            c = new Calculation(a, b);
-            expected = 1;
-            actural = c.SoSanh(a, b);
-            Assert.AreEqual(0, actural);
-
-        }
+       
     }
 }

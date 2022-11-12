@@ -44,6 +44,6 @@ namespace Calculator2
             //    txtKQ.Text = kq.ToString();
             //}
         }
-        
+
     }
 }

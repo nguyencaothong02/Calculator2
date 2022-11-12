@@ -10,10 +10,17 @@ namespace Calculator2
     {
         private int a;
         private int b;
+        private double x;
+        private int n;
         public Calculation(int a, int b)
         {
             this.a = a;
             this.b = b;
+        }
+        public Calculation(double x, int n)
+        {
+            this.x = x;
+            this.n = n;
         }
         public int Execute(string CalSymbol)
         {
@@ -50,6 +57,15 @@ namespace Calculator2
                 }
             }
             return r;
+        }
+        public double Power(double x, int n)
+        {
+            if (n == 0)
+                return 1.0;
+            else if (n > 0)
+                return n * Power(x, n - 1);
+            else
+                return Power(x, n + 1) / x;
         }
     }
 }
